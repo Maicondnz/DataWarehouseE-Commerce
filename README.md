@@ -68,8 +68,8 @@ O DW é construído no schema `dw`, utilizando um modelo **dimensional** do tipo
 
 ## Próximos Passos
 
-1. **Novas Tabelas Fatos**
-   Criação de Tabelas Fato ou Data Warehouses de acordo com a necessidade do negócio como para pagamentos e reviews.
+1. **Novas Tabelas Fatos**  
+  Criação de Tabelas Fato ou Data Warehouses de acordo com a necessidade do negócio para possivel análise de formas de pagamento e reviews.
 
 1. **Automatização do ETL**  
    Estudar e implementar ferramentas de orquestração e transformação de dados como:
