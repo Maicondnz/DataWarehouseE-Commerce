@@ -1,6 +1,6 @@
 # Data Warehouse de Vendas - Olist (PostgreSQL)
 
-Este projeto implementa um **Data Warehouse** em PostgreSQL a partir de dados transacionais da Olist, simulando um ambiente analítico para extração de insights de vendas, clientes, produtos, logística. Ideal para análise de performance comercial e logística de e-commerce
+Este projeto implementa um **Data Warehouse** SCD tipo2 em PostgreSQL a partir de dados transacionais da Olist, simulando um ambiente analítico para extração de insights de vendas, clientes, produtos, logística. Ideal para análise de performance comercial e logística de e-commerce
 
 ---
 
@@ -10,18 +10,12 @@ O projeto utiliza o [Olist E-commerce Public Dataset](https://www.kaggle.com/dat
 
 A organização transacional das tabelas do schema `public`:
 
-- `olist_orders_dataset`
-- `olist_order_items_dataset`
-- `olist_order_reviews_dataset`
-- `olist_products_dataset`
-- `olist_customers_dataset`
-- `olist_sellers_dataset`
-
+![dados transacional](imgs/Banco1%20-%20public.png)
 ---
 
 ##  Objetivo
 
-Este projeto tem como objetivo construir um **Data Warehouse analítico** a partir de dados transacionais da Olist, permitindo a análise de métricas relevantes para o negócio, como:
+O objetivo é construir um **Data Warehouse analítico** que permita a análise de métricas relevantes para o negócio, como:
 
 -  **Vendas por categoria de produto**
 -  **Tempo médio de entrega por estado**
@@ -37,7 +31,7 @@ Essas análises visam auxiliar na **tomada de decisão estratégica**, oferecend
 
 O DW é construído no schema `dw`, utilizando um modelo **dimensional** do tipo **estrela (star schema)** com as seguintes tabelas:
 
-
+![dados transacional](imgs/Banco1%20-%20dw.png)
 ###  Fato
 
 - **`fato_vendas`**  
